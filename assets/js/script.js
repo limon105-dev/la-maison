@@ -49,6 +49,25 @@ $(document).ready(function () {
 
 })
 
+// home-banner slider js start----
+var swiper = new Swiper(".home-banner-slider-thumb", {
+	freeMode: true,
+	loop: true,
+	spaceBetween: 10,
+	slidesPerView: 3,
+	watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".home-banner-slider", {
+	effect: "fade",
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	thumbs: {
+		swiper: swiper,
+	},
+});
+// home-banner slider js start----
+
 // btn js ---
 // primary btn---
 $(function () {

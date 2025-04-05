@@ -221,6 +221,10 @@ button {
     text-decoration: none;
     cursor: pointer;
     line-height: 1;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 50px;
 }
 
 .btn:hover {
@@ -228,7 +232,7 @@ button {
 }
 
 .primary-btn {
-    color: var(--white);
+    color: var(--brand-color);
     position: relative;
     overflow: hidden;
     background-color: var(--btn-bg);
@@ -248,11 +252,15 @@ button {
 }
 
 .primary-btn span {
-    background-color: var(--white);
+    background-color: var(--btn-color);
 }
 
 .primary-btn:hover {
-    color: var(--black);
+    color: var(--btn-bg);
+}
+
+.primary-btn:hover svg path{
+    stroke: var(--btn-bg);
 }
 
 .primary-btn:hover span,
@@ -1031,10 +1039,6 @@ button {
     /* common css end */
 
     /* navbar section css start */
-    .navbar {
-        height: 65px;
-    }
-
     .mobile-side-bar-top {
         height: 65px;
     }
