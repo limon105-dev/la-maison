@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<!-- link css start -->
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<!-- link css end -->
+</head>
+
+<body>
+	<header>
+		<!-- navbar section start -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-wrapper">
+					<div class="navbar-inner-top">
+						<div class="navbar-top">
+							<div class="mobile-menu-btn">
+								<div class="ham-menu">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="navbar-search-bar navbar-search-bar-desktop">
+								<input type="text" placeholder="Recherche">
+								<span class="search-icon">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+											fill="white" />
+										<path
+											d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+											fill="#1E1005" fill-opacity="0.5" />
+									</svg>
+								</span>
+							</div>
+							<div class="navbar-brand">
+								<a href="index.html" class="navbar-logo">
+									<img src="./assets/images/brand-logo.png" alt="brand-logo.png">
+								</a>
+							</div>
+							<div class="nav-icons desktop-nav-icons">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12.6663 9.83333C13.6597 8.86 14.6663 7.69333 14.6663 6.16667C14.6663 5.19421 14.28 4.26158 13.5924 3.57394C12.9048 2.88631 11.9721 2.5 10.9997 2.5C9.82634 2.5 8.99967 2.83333 7.99967 3.83333C6.99967 2.83333 6.17301 2.5 4.99967 2.5C4.02721 2.5 3.09458 2.88631 2.40695 3.57394C1.71932 4.26158 1.33301 5.19421 1.33301 6.16667C1.33301 7.7 2.33301 8.86667 3.33301 9.83333L7.99967 14.5L12.6663 9.83333Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.66634 13.2747V12.1667C4.66634 11.8131 4.80682 11.4739 5.05687 11.2239C5.30691 10.9739 5.64605 10.8334 5.99967 10.8334H9.99967C10.3533 10.8334 10.6924 10.9739 10.9425 11.2239C11.1925 11.4739 11.333 11.8131 11.333 12.1667V13.2747M14.6663 7.50004C14.6663 11.1819 11.6816 14.1667 7.99967 14.1667C4.31778 14.1667 1.33301 11.1819 1.33301 7.50004C1.33301 3.81814 4.31778 0.833374 7.99967 0.833374C11.6816 0.833374 14.6663 3.81814 14.6663 7.50004ZM9.99967 6.16671C9.99967 7.27128 9.10424 8.16671 7.99967 8.16671C6.89511 8.16671 5.99967 7.27128 5.99967 6.16671C5.99967 5.06214 6.89511 4.16671 7.99967 4.16671C9.10424 4.16671 9.99967 5.06214 9.99967 6.16671Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 4.50004L4 1.83337H12L14 4.50004M2 4.50004V13.8334C2 14.187 2.14048 14.5261 2.39052 14.7762C2.64057 15.0262 2.97971 15.1667 3.33333 15.1667H12.6667C13.0203 15.1667 13.3594 15.0262 13.6095 14.7762C13.8595 14.5261 14 14.187 14 13.8334V4.50004M2 4.50004H14M10.6667 7.16671C10.6667 7.87395 10.3857 8.55223 9.88562 9.05233C9.38552 9.55242 8.70724 9.83337 8 9.83337C7.29276 9.83337 6.61448 9.55242 6.11438 9.05233C5.61428 8.55223 5.33333 7.87395 5.33333 7.16671"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+									<li>
+										<span class="select-language">
+											<select name="" id="">
+												<option value="en">EN</option>
+												<option value="ban">BAN</option>
+											</select>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="nav-icons mobile-nav-icons">
+								<ul>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3 6L6 2H18L21 6M3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6M3 6H21M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="navbar-search-bar navbar-search-bar-mobile">
+							<input type="text" placeholder="Recherche">
+							<span class="search-icon">
+								<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+										fill="white" />
+									<path
+										d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+										fill="#1E1005" fill-opacity="0.5" />
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="navbar-inner-bottom">
+						<span class="mobile-menu-close-window-btn"></span>
+						<div class="nav-link-wrapper">
+							<div class="mobile-side-bar-top">
+								<a href="index.html" class="navbar-logo">
+									<img src="./assets/images/brand-logo.png" alt="brand-logo.png">
+								</a>
+								<div class="mobile-menu-btn">
+									<div class="ham-menu">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="navbar-center">
+								<div class="nav-links">
+									<h6 class="nav-link-title">En ce moment</h6>
+									<ul>
+										<li>
+											<a href="#!">Nos services</a>
+										</li>
+										<li>
+											<a href="#!">Nos réalisations</a>
+										</li>
+										<li>
+											<a href="#!">Boutiques</a>
+										</li>
+										<li>
+											<a href="#!">Évènements</a>
+										</li>
+										<li>
+											<a href="#!">La Maison</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="navbar-bottom">
+								<div class="nav-links">
+									<h6 class="nav-link-title">Nos catégories</h6>
+									<ul>
+										<li>
+											<a href="#!">Linge de maison <span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Art de la table<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Tapis<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Fragrance et bien être<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Décoration<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Luminaire<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Mobilier<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Maison et entretien<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Mode<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Épicerie fine<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Marques<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Nouveautés<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Populaires<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+												</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="nav-icons sidebar-nav-icons">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12.6663 9.83333C13.6597 8.86 14.6663 7.69333 14.6663 6.16667C14.6663 5.19421 14.28 4.26158 13.5924 3.57394C12.9048 2.88631 11.9721 2.5 10.9997 2.5C9.82634 2.5 8.99967 2.83333 7.99967 3.83333C6.99967 2.83333 6.17301 2.5 4.99967 2.5C4.02721 2.5 3.09458 2.88631 2.40695 3.57394C1.71932 4.26158 1.33301 5.19421 1.33301 6.16667C1.33301 7.7 2.33301 8.86667 3.33301 9.83333L7.99967 14.5L12.6663 9.83333Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.66634 13.2747V12.1667C4.66634 11.8131 4.80682 11.4739 5.05687 11.2239C5.30691 10.9739 5.64605 10.8334 5.99967 10.8334H9.99967C10.3533 10.8334 10.6924 10.9739 10.9425 11.2239C11.1925 11.4739 11.333 11.8131 11.333 12.1667V13.2747M14.6663 7.50004C14.6663 11.1819 11.6816 14.1667 7.99967 14.1667C4.31778 14.1667 1.33301 11.1819 1.33301 7.50004C1.33301 3.81814 4.31778 0.833374 7.99967 0.833374C11.6816 0.833374 14.6663 3.81814 14.6663 7.50004ZM9.99967 6.16671C9.99967 7.27128 9.10424 8.16671 7.99967 8.16671C6.89511 8.16671 5.99967 7.27128 5.99967 6.16671C5.99967 5.06214 6.89511 4.16671 7.99967 4.16671C9.10424 4.16671 9.99967 5.06214 9.99967 6.16671Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 4.50004L4 1.83337H12L14 4.50004M2 4.50004V13.8334C2 14.187 2.14048 14.5261 2.39052 14.7762C2.64057 15.0262 2.97971 15.1667 3.33333 15.1667H12.6667C13.0203 15.1667 13.3594 15.0262 13.6095 14.7762C13.8595 14.5261 14 14.187 14 13.8334V4.50004M2 4.50004H14M10.6667 7.16671C10.6667 7.87395 10.3857 8.55223 9.88562 9.05233C9.38552 9.55242 8.70724 9.83337 8 9.83337C7.29276 9.83337 6.61448 9.55242 6.11438 9.05233C5.61428 8.55223 5.33333 7.87395 5.33333 7.16671"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+									<li>
+										<span class="select-language">
+											<select name="" id="">
+												<option value="en">EN</option>
+												<option value="ban">BAN</option>
+											</select>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar section end -->
+	</header>
+
+	<main>
+		<!-- banner section start -->
+		 <section class="home-banner-section">
+			<div class="container">
+				<div class="home-banner-slider-wrapper">
+					
+				</div>
+			</div>
+		 </section>
+		<!-- banner section end -->
+	</main>
+
+	<!-- footer section start -->
+	<!-- <footer class="footer-section">
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-items">
+					<div class="footer-item">
+						<h6 class="footer-item-title">Quick links</h6>
+						<ul class="footer-list">
+							<li><a href="#">Our Mission</a></li>
+							<li><a href="#">Products</a></li>
+						</ul>
+					</div>
+					<div class="footer-item">
+						<h6 class="footer-item-title">Info</h6>
+						<ul class="footer-list">
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Cookie & Privacy Policy</a></li>
+							<li><a href="#">Returns & Complains</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-area">
+				<div class="container">
+					<div class="copyright-content">
+						<div class="copyright-img">
+							<img src="./assets/images/copyright-img-1.png" alt="copyright-img-1.png">
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer> -->
+	<!-- footer section end -->
+
+	<!-- js link start-->
+	<script src="./assets/js/jquery-3.7.1.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+	<!-- js link end-->
+</body>
+
+</html>
