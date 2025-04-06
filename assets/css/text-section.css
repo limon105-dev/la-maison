@@ -1,0 +1,35 @@
+/* text-section css start */
+.text-section {
+    padding: 130px 0 65px;
+}
+
+.text-section-content-wrapper {
+    max-width: 1087px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-section-text {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 65px;
+}
+
+.text-section-content-wrapper .btn {
+    margin: 10px 0 0 0;
+}
+
+/* text-section css end */
+
+@media only screen and (max-width:767px){
+    /* text-section css start */
+    .text-section {
+        padding: 80px 0;
+    }
+    
+    .text-section-text {
+        font-size: 34px;
+    }
+    /* text-section css end */
+}

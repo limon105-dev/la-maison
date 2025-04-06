@@ -1,0 +1,260 @@
+/* showcase banner section css start */
+.showcase-banner-section {
+    padding: 65px 0;
+}
+
+.swiper.showcase-banner-slider {
+    height: 800px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.showcase-banner-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.showcase-banner-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 16, 5, 0.3);
+    z-index: 1;
+}
+
+.showcase-banner-top-left-content,
+.showcase-banner-bottom-left-content,
+.showcase-banner-bottom-right-content {
+    position: absolute;
+    z-index: 1;
+}
+
+.showcase-banner-top-left-content {
+    top: 35px;
+    left: 43px;
+}
+
+.showcase-banner-bottom-left-content {
+    bottom: 15px;
+    left: 42px;
+}
+
+.showcase-banner-bottom-right-content {
+    bottom: 22px;
+    right: 24px;
+}
+
+.showcase-banner-sub-title {
+    color: rgba(253, 248, 240, 0.8);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.showcase-banner-top-left-content.showcase-banner-text-large .showcase-banner-sub-title {
+    font-size: 50px;
+}
+
+.showcase-banner-title {
+    color: var(--body-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.showcase-banner-top-left-content.showcase-banner-text-large .showcase-banner-title {
+    font-size: 120px;
+}
+
+.showcase-banner-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.showcase-banner-links .btn.bluer-btn {
+    backdrop-filter: blur(4px);
+    background: rgba(253, 248, 240, 0.3);
+    color: var(--btn-bg);
+}
+
+.showcase-banner-links .btn.bluer-btn svg path {
+    stroke: var(--btn-bg);
+}
+
+.swiper.showcase-banner-slider .swiper-pagination {
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.swiper.showcase-banner-slider .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 23px);
+}
+
+.swiper.showcase-banner-slider .swiper-pagination-bullet {
+    width: 57px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    font-family: var(--paragraph-font);
+    font-weight: 450;
+    font-size: 14px;
+    color: var(--paragraph-text-color);
+    opacity: 1;
+    background: rgba(253, 248, 240, 0.70);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.swiper.showcase-banner-slider .swiper-pagination-bullet-active {
+    background: var(--btn-bg);
+}
+
+.showcase-banner-badge {
+    position: absolute;
+    top: 178px;
+    right: 51px;
+    padding: 9px 7px 4px;
+    color: var(--black);
+    background-color: var(--showcase-banner-badge-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 19.61px;
+    z-index: 1;
+    line-height: 1;
+    display: flex;
+}
+
+.showcase-banner-dot {
+    width: 27px;
+    height: 27px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-banner-dot-cicle {
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.showcase-banner-dot1 {
+    position: absolute;
+    bottom: 33%;
+    left: 20%;
+}
+
+.showcase-banner-dot2 {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+}
+
+.showcase-banner-dot3 {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+}
+
+.showcase-banner-dot4 {
+    position: absolute;
+    bottom: 29%;
+    right: 19%;
+}
+
+.showcase-banner-dot5 {
+    position: absolute;
+    bottom: 48%;
+    right: 8%;
+}
+
+.showcase-banner-dot-card {
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    transform: scale(0);
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+
+.showcase-banner-dot1 .showcase-banner-dot-card,
+.showcase-banner-dot2 .showcase-banner-dot-card,
+.showcase-banner-dot3 .showcase-banner-dot-card,
+.showcase-banner-dot4 .showcase-banner-dot-card {
+    bottom: 100%;
+    left: 0;
+}
+
+.showcase-banner-dot5 .showcase-banner-dot-card {
+    bottom: 100%;
+    right: 100%;
+}
+
+.showcase-banner-dot:hover .showcase-banner-dot-card {
+    transform: scale(1);
+}
+
+.showcase-banner-dot-card .product-card .card-image-wrap:before {
+    padding-bottom: 80%;
+}
+
+.showcase-banner-dot-card .product-card .card-content {
+    margin: 15px 15px 15px 15px;
+}
+
+/* showcase banner section css end */
+
+@media only screen and (max-width:1376px) {
+
+    /* showcase banner section css start */
+    .showcase-banner-dot1,
+    .showcase-banner-dot5,
+    .showcase-banner-dot3,
+    .showcase-banner-dot4 {
+        display: none;
+    }
+
+    /* showcase banner section css end */
+}
