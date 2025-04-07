@@ -3,32 +3,19 @@
     padding: 65px 0;
 }
 
-.swiper.showcase-banner-slider {
+.showcase-banner-item-wrap {
+    position: relative;
+}
+
+.showcase-banner-item {
+    width: 100%;
+    height: 100%;
     height: 800px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
-
-.showcase-banner-item {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.showcase-banner-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 16, 5, 0.3);
-    z-index: 1;
 }
 
 .showcase-banner-top-left-content,
@@ -244,6 +231,19 @@
     margin: 15px 15px 15px 15px;
 }
 
+.showcase-banner-top-left-content.mobile-showcase-banner-top-left-content,
+.showcase-banner-bottom-left-content.mobile-showcase-banner-bottom-left-content,
+.showcase-banner-bottom-right-content.mobile-showcase-banner-bottom-right-content {
+    display: none;
+    position: unset;
+}
+
+.showcase-banner-top-left-content.mobile-showcase-banner-top-left-content .showcase-banner-sub-title,
+.showcase-banner-top-left-content.mobile-showcase-banner-top-left-content .showcase-banner-title {
+    color: var(--heading-text-color);
+}
+
+
 /* showcase banner section css end */
 
 @media only screen and (max-width:1376px) {
@@ -256,5 +256,101 @@
         display: none;
     }
 
+    .showcase-banner-item {
+        height: 100%;
+    }
+
+    /* showcase banner section css end */
+}
+
+@media only screen and (max-width:992px) {
+
+    /* showcase banner section css start */
+    .showcase-banner-item {
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .swiper.showcase-banner-slider .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 43px);
+    }
+
+    .showcase-banner-top-left-content,
+    .showcase-banner-bottom-left-content,
+    .showcase-banner-bottom-right-content {
+        display: none;
+    }
+
+    .showcase-banner-top-left-content.mobile-showcase-banner-top-left-content,
+    .showcase-banner-bottom-left-content.mobile-showcase-banner-bottom-left-content,
+    .showcase-banner-bottom-right-content.mobile-showcase-banner-bottom-right-content {
+        display: block;
+    }
+
+    .showcase-banner-bottom-right-content.mobile-showcase-banner-bottom-right-content {
+       margin: 20px 0 0 0;
+    }
+
+    .showcase-banner-top-left-content .showcase-banner-sub-title,
+    .showcase-banner-bottom-left-content .showcase-banner-sub-title,
+    .showcase-banner-bottom-right-content .showcase-banner-sub-title {
+        color: var(--heading-text-color);
+    }
+
+    .showcase-banner-top-left-content .showcase-banner-title,
+    .showcase-banner-bottom-left-content .showcase-banner-title,
+    .showcase-banner-bottom-right-content .showcase-banner-title {
+        color: var(--heading-text-color);
+    }
+
+    .showcase-banner-badge {
+        display: none;
+    }
+
+    .showcase-banner-links {
+        display: inline-flex;
+        row-gap: 15px;
+    }
+
+    .showcase-banner-links .btn.bluer-btn {
+        background: rgb(225 207 185 / 50%);
+        color: var(--paragraph-text-color);
+        border: none;
+    }
+
+    .showcase-banner-links .btn.bluer-btn svg path {
+        stroke: var(--paragraph-text-color);
+    }
+    /* showcase banner section css end */
+}
+
+@media only screen and (max-width:767px) {
+
+    /* showcase banner section css start */
+    .showcase-banner-section {
+        padding: 40px 0;
+    }
+
+    .showcase-banner-title {
+        font-size: 40px;
+    }
+
+    .showcase-banner-top-left-content.showcase-banner-text-large .showcase-banner-sub-title {
+        font-size: 30px;
+    }
+
+    .showcase-banner-top-left-content.showcase-banner-text-large .showcase-banner-title {
+        font-size: 40px;
+    }
+    /* showcase banner section css end */
+}
+
+@media only screen and (max-width:575px) {
+
+    /* showcase banner section css start */
+    .showcase-banner-item {
+        height: 335px;
+    }
     /* showcase banner section css end */
 }

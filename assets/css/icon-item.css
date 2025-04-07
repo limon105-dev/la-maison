@@ -1,0 +1,87 @@
+/* icon-item section css start */
+.icon-item-section.home-icon-item-section {
+    padding-top: 100px;
+}
+
+.icon-item-section {
+    padding: 35px 0;
+}
+
+.icon-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+.icon-item {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.icon-item-icon .icon {
+    display: inline-flex;
+}
+
+.icon-item-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-item-content-title {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 35px;
+    width: 112px;
+}
+
+.icon-item-content-text {
+    color: var(--paragraph-text-color);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 14px 0 0 0;
+}
+
+/* icon-item section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* icon-item section css start */
+    .icon-item-section.home-icon-item-section {
+        padding-top: 75px;
+    }
+    
+    .icon-items {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .icon-item {
+        width: 100%;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .icon-item-content {
+        display: block;
+    }
+
+    .icon-item-content-title {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .icon-item-content-text {
+        margin: 2px 0 0 0;
+    }
+
+    /* icon-item section css end */
+}
