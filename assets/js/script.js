@@ -54,6 +54,14 @@ $(document).ready(function () {
 
 	// collection tab js end---
 
+	// **..product-accordion js start..**
+	$('.product-accordion-toggle-btn').on('click', function () {
+		$(this).next().slideToggle();
+		$(this).parent().toggleClass('active');
+		$(this).parent().siblings().removeClass('active').find('.product-accordion-item-content').slideUp();
+	});
+	// **..product-accordion js end..**
+
 	// mobile-dropdown responsive accordion js start--
 	$(function () {
 		let isMobile = window.matchMedia("only screen and (max-width: 992px)").matches;

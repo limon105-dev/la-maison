@@ -1,4 +1,8 @@
 /* breadcrumb-section css start */
+.breadcrumb-section.page-top-breadcrumb {
+    padding: 216px 0 0 0;
+}
+
 .breadcrumb {
     padding: 12px 0;
     display: flex;
@@ -34,11 +38,19 @@
     padding: 0 18px 0 0;
 }
 
-.breadcrumb li:first-child a {}
-
 .breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
 
 /* breadcrumb-section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* breadcrumb-section css start */
+    .breadcrumb-section.page-top-breadcrumb {
+        padding: 165px 0 0 0;
+    }
+
+    /* breadcrumb-section css end */
+}

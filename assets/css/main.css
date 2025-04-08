@@ -75,14 +75,18 @@
     --paragraph-text-color: #1E1005;
     --brand-color: #1E1005;
     --section-bg: #EFE3D5;
+    --section-bg2: rgba(225, 207, 185, 0.50);
     --card-bg: #EFE3D5;
     --border-color: #FDF8F0;
     --border-color2: #EFE3D5;
+    --border-color3: #E7E7E7;
+    --border-color4: #8F552F;
     --text-muted: rgba(30, 16, 5, 0.5);
     --btn-color: #1E1005;
     --btn-bg: #FDF8F0;
     --body-color: #FDF8F0;
     --showcase-banner-badge-color: #FF24D3;
+    --checkbox-color: #E1CFB9;
 
     /* font family */
     --heading-font: "Newsreader", serif;

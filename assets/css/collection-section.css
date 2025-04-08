@@ -1,8 +1,4 @@
 /* collection-section css start */
-.breadcrumb-section.collection-breadcrumb {
-    padding: 216px 0 0 0;
-}
-
 .collection-section {
     padding: 25px 0 55px;
 }
@@ -294,10 +290,6 @@
 @media only screen and (max-width:767px) {
 
     /* collection-section css start */
-    .breadcrumb-section.collection-breadcrumb {
-        padding: 165px 0 0 0;
-    }
-
     .collection-single-item-content-wrapper {
         gap: 20px;
         margin: 0;
