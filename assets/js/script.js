@@ -27,6 +27,20 @@ $(document).ready(function () {
 	});
 	// navbar js end ---
 
+	// collection-filter js start---
+	$(".filter-open-btn").click(function (event) {
+		event.stopPropagation();
+		$(".collection-filter").addClass("active");
+		$("body").addClass("active");
+	});
+
+	$(".filter-close-btn").click(function (event) {
+		event.stopPropagation();
+		$(".collection-filter").removeClass("active");
+		$("body").removeClass("active");
+	});
+	// collection-filter js end---
+
 	// collection tab js start---
 	$('.collection-tab-link').click(function () {
 		$('.collection-tab-link').removeClass('active');

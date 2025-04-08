@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collections</title>
+	<!-- link css start -->
+	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/css/pagination.css">
+	<link rel="stylesheet" href="./assets/css/icon-item.css">
+	<link rel="stylesheet" href="./assets/css/card.css">
+	<link rel="stylesheet" href="./assets/css/collection-section.css">
+	<link rel="stylesheet" href="./assets/css/breadcrumb.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<!-- link css end -->
+</head>
+
+<body>
+	<header>
+		<!-- navbar section start -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="navbar-wrapper">
+					<div class="navbar-inner-top">
+						<div class="navbar-top">
+							<div class="mobile-menu-btn">
+								<div class="ham-menu">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+							<div class="navbar-search-bar navbar-search-bar-desktop">
+								<input type="text" placeholder="Recherche">
+								<span class="search-icon">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+											fill="white" />
+										<path
+											d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+											fill="#1E1005" fill-opacity="0.5" />
+									</svg>
+								</span>
+							</div>
+							<div class="navbar-brand">
+								<a href="index.html" class="navbar-logo">
+									<img src="./assets/images/brand-logo.png" alt="brand-logo.png">
+								</a>
+							</div>
+							<div class="nav-icons desktop-nav-icons">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12.6663 9.83333C13.6597 8.86 14.6663 7.69333 14.6663 6.16667C14.6663 5.19421 14.28 4.26158 13.5924 3.57394C12.9048 2.88631 11.9721 2.5 10.9997 2.5C9.82634 2.5 8.99967 2.83333 7.99967 3.83333C6.99967 2.83333 6.17301 2.5 4.99967 2.5C4.02721 2.5 3.09458 2.88631 2.40695 3.57394C1.71932 4.26158 1.33301 5.19421 1.33301 6.16667C1.33301 7.7 2.33301 8.86667 3.33301 9.83333L7.99967 14.5L12.6663 9.83333Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.66634 13.2747V12.1667C4.66634 11.8131 4.80682 11.4739 5.05687 11.2239C5.30691 10.9739 5.64605 10.8334 5.99967 10.8334H9.99967C10.3533 10.8334 10.6924 10.9739 10.9425 11.2239C11.1925 11.4739 11.333 11.8131 11.333 12.1667V13.2747M14.6663 7.50004C14.6663 11.1819 11.6816 14.1667 7.99967 14.1667C4.31778 14.1667 1.33301 11.1819 1.33301 7.50004C1.33301 3.81814 4.31778 0.833374 7.99967 0.833374C11.6816 0.833374 14.6663 3.81814 14.6663 7.50004ZM9.99967 6.16671C9.99967 7.27128 9.10424 8.16671 7.99967 8.16671C6.89511 8.16671 5.99967 7.27128 5.99967 6.16671C5.99967 5.06214 6.89511 4.16671 7.99967 4.16671C9.10424 4.16671 9.99967 5.06214 9.99967 6.16671Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 4.50004L4 1.83337H12L14 4.50004M2 4.50004V13.8334C2 14.187 2.14048 14.5261 2.39052 14.7762C2.64057 15.0262 2.97971 15.1667 3.33333 15.1667H12.6667C13.0203 15.1667 13.3594 15.0262 13.6095 14.7762C13.8595 14.5261 14 14.187 14 13.8334V4.50004M2 4.50004H14M10.6667 7.16671C10.6667 7.87395 10.3857 8.55223 9.88562 9.05233C9.38552 9.55242 8.70724 9.83337 8 9.83337C7.29276 9.83337 6.61448 9.55242 6.11438 9.05233C5.61428 8.55223 5.33333 7.87395 5.33333 7.16671"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+									<li>
+										<span class="select-language">
+											<select name="" id="">
+												<option value="en">EN</option>
+												<option value="ban">BAN</option>
+											</select>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="nav-icons mobile-nav-icons">
+								<ul>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M3 6L6 2H18L21 6M3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6M3 6H21M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="navbar-search-bar navbar-search-bar-mobile">
+							<input type="text" placeholder="Recherche">
+							<span class="search-icon">
+								<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+										fill="white" />
+									<path
+										d="M1.59998 6.89967C1.59998 4.25261 3.75276 2.09992 6.39994 2.09992C9.04711 2.09992 11.1999 4.25261 11.1999 6.89967C11.1999 9.54673 9.04711 11.6994 6.39994 11.6994C3.75276 11.6994 1.59998 9.54673 1.59998 6.89967ZM15.7654 15.1336L11.4495 10.8171C12.3245 9.69875 12.7999 8.31964 12.7999 6.89967C12.7999 3.37105 9.9287 0.5 6.39994 0.5C2.87117 0.5 0 3.37105 0 6.89967C0 10.4283 2.87117 13.2993 6.39994 13.2993C7.81988 13.2989 9.19889 12.8236 10.3175 11.949L14.6343 16.2648C14.7084 16.3393 14.7965 16.3985 14.8936 16.4389C14.9906 16.4792 15.0947 16.5 15.1998 16.5C15.305 16.5 15.4091 16.4792 15.5061 16.4389C15.6032 16.3985 15.6913 16.3393 15.7654 16.2648C15.8398 16.1906 15.8988 16.1024 15.939 16.0054C15.9793 15.9083 16 15.8043 16 15.6992C16 15.5942 15.9793 15.4901 15.939 15.3931C15.8988 15.296 15.8398 15.2079 15.7654 15.1336Z"
+										fill="#1E1005" fill-opacity="0.5" />
+								</svg>
+							</span>
+						</div>
+					</div>
+					<div class="navbar-inner-bottom">
+						<span class="mobile-menu-close-window-btn"></span>
+						<div class="nav-link-wrapper">
+							<div class="mobile-side-bar-top">
+								<a href="index.html" class="navbar-logo">
+									<img src="./assets/images/brand-logo.png" alt="brand-logo.png">
+								</a>
+								<div class="mobile-menu-btn">
+									<div class="ham-menu">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="navbar-center">
+								<div class="nav-links">
+									<h6 class="nav-link-title">En ce moment</h6>
+									<ul>
+										<li>
+											<a href="#!">Nos services</a>
+										</li>
+										<li>
+											<a href="#!">Nos réalisations</a>
+										</li>
+										<li>
+											<a href="#!">Boutiques</a>
+										</li>
+										<li>
+											<a href="#!">Évènements</a>
+										</li>
+										<li>
+											<a href="#!">La Maison</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="navbar-bottom">
+								<div class="nav-links">
+									<h6 class="nav-link-title">Nos catégories</h6>
+									<ul>
+										<li>
+											<a href="#!">Linge de maison <span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Art de la table<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Tapis<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10"
+														fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Fragrance et bien être<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Décoration<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Luminaire<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Mobilier<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Maison et entretien<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Mode<span class="mobile-nav-link-icon"><svg width="6" height="10" viewBox="0 0 6 10"
+														fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Épicerie fine<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Marques<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Nouveautés<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+										<li>
+											<a href="#!">Populaires<span class="mobile-nav-link-icon"><svg width="6" height="10"
+														viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.25 8.5L4.75 5L1.25 1.5" stroke="#1E1005" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="nav-icons sidebar-nav-icons">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M12.6663 9.83333C13.6597 8.86 14.6663 7.69333 14.6663 6.16667C14.6663 5.19421 14.28 4.26158 13.5924 3.57394C12.9048 2.88631 11.9721 2.5 10.9997 2.5C9.82634 2.5 8.99967 2.83333 7.99967 3.83333C6.99967 2.83333 6.17301 2.5 4.99967 2.5C4.02721 2.5 3.09458 2.88631 2.40695 3.57394C1.71932 4.26158 1.33301 5.19421 1.33301 6.16667C1.33301 7.7 2.33301 8.86667 3.33301 9.83333L7.99967 14.5L12.6663 9.83333Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M4.66634 13.2747V12.1667C4.66634 11.8131 4.80682 11.4739 5.05687 11.2239C5.30691 10.9739 5.64605 10.8334 5.99967 10.8334H9.99967C10.3533 10.8334 10.6924 10.9739 10.9425 11.2239C11.1925 11.4739 11.333 11.8131 11.333 12.1667V13.2747M14.6663 7.50004C14.6663 11.1819 11.6816 14.1667 7.99967 14.1667C4.31778 14.1667 1.33301 11.1819 1.33301 7.50004C1.33301 3.81814 4.31778 0.833374 7.99967 0.833374C11.6816 0.833374 14.6663 3.81814 14.6663 7.50004ZM9.99967 6.16671C9.99967 7.27128 9.10424 8.16671 7.99967 8.16671C6.89511 8.16671 5.99967 7.27128 5.99967 6.16671C5.99967 5.06214 6.89511 4.16671 7.99967 4.16671C9.10424 4.16671 9.99967 5.06214 9.99967 6.16671Z"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<span class="cart-sidebar-open-btn">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2 4.50004L4 1.83337H12L14 4.50004M2 4.50004V13.8334C2 14.187 2.14048 14.5261 2.39052 14.7762C2.64057 15.0262 2.97971 15.1667 3.33333 15.1667H12.6667C13.0203 15.1667 13.3594 15.0262 13.6095 14.7762C13.8595 14.5261 14 14.187 14 13.8334V4.50004M2 4.50004H14M10.6667 7.16671C10.6667 7.87395 10.3857 8.55223 9.88562 9.05233C9.38552 9.55242 8.70724 9.83337 8 9.83337C7.29276 9.83337 6.61448 9.55242 6.11438 9.05233C5.61428 8.55223 5.33333 7.87395 5.33333 7.16671"
+													stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+									</li>
+									<li>
+										<span class="select-language">
+											<select name="" id="">
+												<option value="en">EN</option>
+												<option value="ban">BAN</option>
+											</select>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- navbar section end -->
+	</header>
+
+	<main>
+		<!-- breadcrumb-sectin start -->
+		<section class="breadcrumb-section collection-breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li>
+						<a href="#">
+							<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.00033 9.08329L0.916992 4.99996M0.916992 4.99996L5.00033 0.916626M0.916992 4.99996H9.08366"
+									stroke="#1E1005" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</li>
+					<li><a href="#">Accueil</a></li>
+					<li>Linge de maison</li>
+				</ul>
+			</div>
+		</section>
+		<!-- breadcrumb-sectin end -->
+
+		<!-- collection-section start -->
+		<section class="collection-section">
+			<div class="container">
+				<div class="collection-single-item-content-wrapper">
+					<div class="collection-single-item-img">
+						<img src="./assets/images/menu item.jpg" alt="menu item.jpg">
+					</div>
+					<div class="collection-single-item-content">
+						<div class="collection-single-item-content-inner">
+							<h2 class="collection-single-item-content-title">Linge
+								de maison <span class="collection-item-count">(48)</span></h2>
+							<p class="collection-single-item-content-text">
+								Chez La Maison Générale, nous privilégions des textiles d'exception comme le lin, le coton biologique et
+								la laine. Que vous aimiez le style classique, bohème ou contemporain, trouvez le linge idéal pour créer
+								une ambiance chaleureuse et harmonieuse. Découvrez nos collections et offrez à votre intérieur une
+								touche de douceur intemporelle !
+							</p>
+						</div>
+						<div class="collection-categorie-items">
+							<a href="#" class="collection-categorie-item">
+								<img src="./assets/images/Category card.jpg" alt="Category card.jpg">
+								<div class="collection-categorie-item-overlay">
+									<h6 class="collection-categorie-item-title">Linge<br>
+										de bain</h6>
+								</div>
+							</a>
+							<a href="#" class="collection-categorie-item">
+								<img src="./assets/images/Category card (1).jpg" alt="Category card (1).jpg">
+								<div class="collection-categorie-item-overlay">
+									<h6 class="collection-categorie-item-title">Linge<br>
+										de bain</h6>
+								</div>
+							</a>
+							<a href="#" class="collection-categorie-item">
+								<img src="./assets/images/Category card (2).jpg" alt="Category card (2).jpg">
+								<div class="collection-categorie-item-overlay">
+									<h6 class="collection-categorie-item-title">Linge<br>
+										de bain</h6>
+								</div>
+							</a>
+							<a href="#" class="collection-categorie-item">
+								<img src="./assets/images/Category card (3).jpg" alt="Category card (3).jpg">
+								<div class="collection-categorie-item-overlay">
+									<h6 class="collection-categorie-item-title">Linge<br>
+										de bain</h6>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="collection-item-with-filter">
+					<div class="collection-filter">
+						<div class="collection-filter-mobile-title-wrap">
+							<h6 class="collection-filter-mobile-title">Filter</h6>
+							<span class="filter-close-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="35px"
+									height="35px">
+									<path
+										d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z" />
+									</svg></span>
+						</div>
+						<div class="collection-filter-top">
+							<div class="collection-filter-items">
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Couleurs</option>
+										<option value="red">Red</option>
+										<option value="blue">Blue</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Matière</option>
+										<option value="option1">Option1</option>
+										<option value="option2">Option2</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Collection</option>
+										<option value="option1">Option1</option>
+										<option value="option2">Option2</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Prix</option>
+										<option value="option1">Option1</option>
+										<option value="option2">Option2</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Marque</option>
+										<option value="option1">Option1</option>
+										<option value="option2">Option2</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+							</div>
+							<div class="collection-single-filter">
+								<div class="collection-filter-item">
+									<select name="" id="">
+										<option value="couleurs">Trier par</option>
+										<option value="option1">Option1</option>
+										<option value="option2">Option2</option>
+									</select>
+									<span class="icon">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.5 1.25L5 4.75L8.5 1.25" stroke="#1E1005" stroke-width="1.2" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="filter-selected-items">
+							<div class="filter-selected-item">
+								<p class="filter-selected-item-text">Coton</p>
+								<button>
+									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.5 1.5L1.5 8.5M1.5 1.5L8.5 8.5" stroke="#FDF8F0" stroke-width="1.2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+							<div class="filter-selected-item">
+								<p class="filter-selected-item-text">Yves Delorme</p>
+								<button>
+									<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.5 1.5L1.5 8.5M1.5 1.5L8.5 8.5" stroke="#FDF8F0" stroke-width="1.2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<h6 class="filter-open-btn btn primary-btn">Filter <span></span></h6>
+					<div class="collection-items">
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (1).jpg" alt="product-img (1).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (2).jpg" alt="product-img (2).jpg">
+										</a>
+									</div>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (2).jpg" alt="product-img (2).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (3).jpg" alt="product-img (3).jpg">
+										</a>
+									</div>
+									<span class="card-badge">
+										Nouveauté
+									</span>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (3).jpg" alt="product-img (3).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (4).jpg" alt="product-img (4).jpg">
+										</a>
+									</div>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (4).jpg" alt="product-img (4).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (1).jpg" alt="product-img (1).jpg">
+										</a>
+									</div>
+									<span class="card-badge">
+										Nouveauté
+									</span>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (1).jpg" alt="product-img (1).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (2).jpg" alt="product-img (2).jpg">
+										</a>
+									</div>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (2).jpg" alt="product-img (2).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (3).jpg" alt="product-img (3).jpg">
+										</a>
+									</div>
+									<span class="card-badge">
+										Nouveauté
+									</span>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (3).jpg" alt="product-img (3).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (4).jpg" alt="product-img (4).jpg">
+										</a>
+									</div>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collection-item">
+							<div class="product-card card_hover">
+								<div class="card-image-wrap">
+									<div class="card-img">
+										<a class="main-img" href="#">
+											<img class="card_img" src="./assets/images/product-img (4).jpg" alt="product-img (4).jpg">
+										</a>
+										<a class="hover-img" href="#">
+											<img class="card_hover_img" src="./assets/images/product-img (1).jpg" alt="product-img (1).jpg">
+										</a>
+									</div>
+									<span class="card-badge">
+										Nouveauté
+									</span>
+								</div>
+								<div class="card-content">
+									<a href="#" class="card-title2">Marque</a>
+									<a href="#" class="card-title">Nom du produit nom du produit
+										sur deux lignes</a>
+									<div class="card-price-wrap">
+										<p class="latest-price">300 $</p>
+										<p class="previous-price"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="collection-pagination">
+						<div class="pagination">
+							<a href="#">
+								<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M1.00025 12.0002C0.74425 12.0002 0.48825 11.9022 0.29325 11.7072C-0.09775 11.3162 -0.09775 10.6842 0.29325 10.2933L4.58625 6.00025L0.29325 1.70725C-0.09775 1.31625 -0.09775 0.68425 0.29325 0.29325C0.68425 -0.09775 1.31625 -0.09775 1.70725 0.29325L6.70725 5.29325C7.09825 5.68425 7.09825 6.31625 6.70725 6.70725L1.70725 11.7072C1.51225 11.9022 1.25625 12.0002 1.00025 12.0002Z"
+										fill="#1E1005" />
+								</svg>
+							</a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">
+								<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M1.00025 12.0002C0.74425 12.0002 0.48825 11.9022 0.29325 11.7072C-0.09775 11.3162 -0.09775 10.6842 0.29325 10.2933L4.58625 6.00025L0.29325 1.70725C-0.09775 1.31625 -0.09775 0.68425 0.29325 0.29325C0.68425 -0.09775 1.31625 -0.09775 1.70725 0.29325L6.70725 5.29325C7.09825 5.68425 7.09825 6.31625 6.70725 6.70725L1.70725 11.7072C1.51225 11.9022 1.25625 12.0002 1.00025 12.0002Z"
+										fill="#1E1005" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- collection-section end -->
+
+		<!-- icon-item-section start -->
+		<section class="icon-item-section">
+			<div class="container">
+				<div class="icon-items">
+					<div class="icon-item">
+						<div class="icon-item-icon">
+							<span class="icon">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M3.75 22.5V15C3.75 12.0163 4.93526 9.15483 7.04505 7.04505C9.15483 4.93526 12.0163 3.75 15 3.75C17.9837 3.75 20.8452 4.93526 22.955 7.04505C25.0647 9.15483 26.25 12.0163 26.25 15V22.5"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M26.25 23.7471C26.25 24.4101 25.9866 25.046 25.5178 25.5148C25.0489 25.9837 24.413 26.2471 23.75 26.2471H22.5C21.837 26.2471 21.2011 25.9837 20.7322 25.5148C20.2634 25.046 20 24.4101 20 23.7471V19.9971C20 19.334 20.2634 18.6981 20.7322 18.2293C21.2011 17.7605 21.837 17.4971 22.5 17.4971H26.25V23.7471ZM3.75 23.7471C3.75 24.4101 4.01339 25.046 4.48223 25.5148C4.95107 25.9837 5.58696 26.2471 6.25 26.2471H7.5C8.16304 26.2471 8.79893 25.9837 9.26777 25.5148C9.73661 25.046 10 24.4101 10 23.7471V19.9971C10 19.334 9.73661 18.6981 9.26777 18.2293C8.79893 17.7605 8.16304 17.4971 7.5 17.4971H3.75V23.7471Z"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</div>
+						<div class="icon-item-content">
+							<h5 class="icon-item-content-title">Service
+								client</h5>
+							<p class="icon-item-content-text">
+								Lorem ipsum dolor sit amet consectetur. Ultricies adipiscing diam magna in eget sit in porttitor.
+							</p>
+						</div>
+					</div>
+					<div class="icon-item">
+						<div class="icon-item-icon">
+							<span class="icon">
+								<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M26.915 5.00391H4.41504C3.03433 5.00391 1.91504 6.12319 1.91504 7.50391V22.5039C1.91504 23.8846 3.03433 25.0039 4.41504 25.0039H26.915C28.2958 25.0039 29.415 23.8846 29.415 22.5039V7.50391C29.415 6.12319 28.2958 5.00391 26.915 5.00391Z"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M1.91504 12.5039H29.415" stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</div>
+						<div class="icon-item-content">
+							<h5 class="icon-item-content-title">Paiement sécurisé</h5>
+							<p class="icon-item-content-text">
+								Lorem ipsum dolor sit amet consectetur. Ultricies adipiscing diam magna in eget sit in porttitor.
+							</p>
+						</div>
+					</div>
+					<div class="icon-item">
+						<div class="icon-item-icon">
+							<span class="icon">
+								<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.3369 3.75H1.58691V20H20.3369V3.75Z" stroke="#1E1005" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M20.3369 9.99609H25.3369L29.0869 13.7461V19.9961H20.3369V9.99609Z" stroke="#1E1005"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M7.20801 26.2539C8.9339 26.2539 10.333 24.8548 10.333 23.1289C10.333 21.403 8.9339 20.0039 7.20801 20.0039C5.48212 20.0039 4.08301 21.403 4.08301 23.1289C4.08301 24.8548 5.48212 26.2539 7.20801 26.2539Z"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M23.4619 26.2539C25.1878 26.2539 26.5869 24.8548 26.5869 23.1289C26.5869 21.403 25.1878 20.0039 23.4619 20.0039C21.736 20.0039 20.3369 21.403 20.3369 23.1289C20.3369 24.8548 21.736 26.2539 23.4619 26.2539Z"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</div>
+						<div class="icon-item-content">
+							<h5 class="icon-item-content-title">Transport</h5>
+							<p class="icon-item-content-text">
+								Lorem ipsum dolor sit amet consectetur. Ultricies adipiscing diam magna in eget sit in porttitor.
+							</p>
+						</div>
+					</div>
+					<div class="icon-item">
+						<div class="icon-item-icon">
+							<span class="icon">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.25391 5.00391V12.5039H8.75391" stroke="#1E1005" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M28.7461 24.9961V17.4961H21.2461" stroke="#1E1005" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M25.6164 11.2529C24.9824 9.46138 23.905 7.85966 22.4846 6.59717C21.0642 5.33469 19.3471 4.45261 17.4935 4.03322C15.64 3.61384 13.7105 3.67083 11.8849 4.19887C10.0594 4.72691 8.39734 5.70879 7.05391 7.0529L1.25391 12.5029M28.7539 17.5029L22.9539 22.9529C21.6105 24.297 19.9484 25.2789 18.1229 25.8069C16.2973 26.335 14.3678 26.392 12.5143 25.9726C10.6607 25.5532 8.94366 24.6711 7.52324 23.4086C6.10282 22.1461 5.02537 20.5444 4.39141 18.7529"
+										stroke="#1E1005" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+						</div>
+						<div class="icon-item-content">
+							<h5 class="icon-item-content-title">Retours</h5>
+							<p class="icon-item-content-text">
+								Lorem ipsum dolor sit amet consectetur. Ultricies adipiscing diam magna in eget sit in porttitor.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- icon-item-section end -->
+	</main>
+
+	<!-- footer section start -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="footer-top-content">
+				<div class="footer-top-items">
+					<div class="footer-top-item">
+						<h2 class="footer-top-item-title"><em>Rendez-vous</em>
+							en boutique</h2>
+						<div class="footer-top-item-content">
+							<ul>
+								<li>
+									<a href="#">+1 (514) 555-1234</a>
+								</li>
+								<li>
+									<a href="#">contact@lamaisongenerale.ca</a>
+								</li>
+								<li>
+									<p>237 Avenue Laurier Ouest, Montréal</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-top-item">
+						<h2 class="footer-top-item-title"><em>Inscription à</em>
+							l’infolettre</h2>
+						<div class="footer-top-item-content">
+							<button class="footer-input-field">
+								<input type="email" placeholder="Courriel">
+								<span class="footer-input-field-icon">
+									<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.33301 8.50016H12.6663M12.6663 8.50016L7.99967 3.8335M12.6663 8.50016L7.99967 13.1668"
+											stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-middle-content">
+				<div class="footer-middle-items">
+					<div class="footer-middle-item">
+						<p class="footer-middle-item-title">À propos</p>
+						<ul>
+							<li>
+								<a href="#">La Maison</a>
+							</li>
+							<li>
+								<a href="#">L’équipe</a>
+							</li>
+							<li>
+								<a href="#">On parle de nous</a>
+							</li>
+							<li>
+								<a href="#">Nous contacter</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-middle-item">
+						<p class="footer-middle-item-title">Nos services</p>
+						<ul>
+							<li>
+								<a href="#">Le Studio</a>
+							</li>
+							<li>
+								<a href="#">L’Atelier</a>
+							</li>
+							<li>
+								<a href="#">Nos réalisations</a>
+							</li>
+							<li>
+								<a href="#">Nos évènements</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-middle-item">
+						<p class="footer-middle-item-title">Informations</p>
+						<ul>
+							<li>
+								<a href="#">Livraison et retour</a>
+							</li>
+							<li>
+								<a href="#">Mentions légales</a>
+							</li>
+							<li>
+								<a href="#">CGV</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Plan du site</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-middle-item">
+						<p class="footer-middle-item-title">social media</p>
+						<ul>
+							<li>
+								<a href="#">Instagram</a>
+							</li>
+							<li>
+								<a href="#">Facebook</a>
+							</li>
+							<li>
+								<a href="#">Pinterest</a>
+							</li>
+							<li>
+								<a href="#">Linkedin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-content">
+				<div class="copyright-section">
+					<a href="#">
+						<img src="./assets/images/footer-btm-logo.png" alt="footer-btm-logo.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer section end -->
+
+	<!-- js link start-->
+	<script src="./assets/js/jquery-3.7.1.min.js"></script>
+	<script src="./assets/js/swiper-bundle.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+	<!-- js link end-->
+</body>
+
+</html>

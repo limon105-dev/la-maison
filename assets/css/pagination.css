@@ -1,0 +1,57 @@
+/* pagination css start */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: var(--paragraph-text-color);
+    float: left;
+    font-family: var(--paragraph-font);
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pagination a:first-child svg{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+.pagination a::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 7px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: var(--btn-color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pagination a.active::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pagination a:hover:not(.active)::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* pagination css end */
