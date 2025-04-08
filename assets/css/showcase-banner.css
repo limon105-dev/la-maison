@@ -272,7 +272,10 @@
         margin: 20px 0;
     }
 
-    .swiper.showcase-banner-slider .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    .swiper.showcase-banner-slider .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
         bottom: var(--swiper-pagination-bottom, 43px);
     }
 
@@ -289,7 +292,7 @@
     }
 
     .showcase-banner-bottom-right-content.mobile-showcase-banner-bottom-right-content {
-       margin: 20px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .showcase-banner-top-left-content .showcase-banner-sub-title,
@@ -322,6 +325,7 @@
     .showcase-banner-links .btn.bluer-btn svg path {
         stroke: var(--paragraph-text-color);
     }
+
     /* showcase banner section css end */
 }
 
@@ -343,6 +347,17 @@
     .showcase-banner-top-left-content.showcase-banner-text-large .showcase-banner-title {
         font-size: 40px;
     }
+
+    .showcase-banner-dot1 .showcase-banner-dot-card, .showcase-banner-dot2 .showcase-banner-dot-card, .showcase-banner-dot3 .showcase-banner-dot-card, .showcase-banner-dot4 .showcase-banner-dot-card {
+        bottom: -60px;
+        left: -113px;
+    }
+
+    .showcase-banner-dot:hover .showcase-banner-dot-card {
+        transform: scale(0.6);
+    }
+
+
     /* showcase banner section css end */
 }
 
