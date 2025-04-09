@@ -316,17 +316,88 @@
 }
 
 .product-accordion-item.active .item-title-wrapper .icon svg {
-   transform: rotate(45deg);
-   -webkit-transform: rotate(135deg);
-   -moz-transform: rotate(45deg);
-   -ms-transform: rotate(45deg);
-   -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 /* product-single-section css end */
 
+/* masurement-gidue modal css start */
+.masurement-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 99999;
+}
+
+.masurement-modal.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.masurement-modal-content {
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--body-color);
+    padding: 20px;
+}
+
+.modal-content-top {
+    padding: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-content-title {
+    color: var(--heading-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    line-height: 1;
+}
+
+.measurement-guide-content {
+    width: 100%;
+}
+
+.measurement-guide-content,
+.measurement-guide-content th,
+.measurement-guide-content td {
+    border: 1px solid var(--border-color3);
+    border-collapse: collapse;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--brand-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.modal-close-button {
+    cursor: pointer;
+}
+
+/* masurement-gidue modal css end */
+
 
 @media only screen and (max-width:992px) {
+
     /* product-single-section css start */
     .product-single-wrapper {
         flex-wrap: wrap;
@@ -355,11 +426,12 @@
 }
 
 @media only screen and (max-width: 767px) {
+
     /* product-single-section css start */
     .product-single-section {
         padding: 12px 0 40px;
     }
-    
+
     .product-single-wrapper {
         gap: 20px;
     }
@@ -379,5 +451,15 @@
     .product-accordion-item-content {
         padding: 0 0 15px 0;
     }
+
     /* product-single-sectionn css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* masurement-gidue modal css start */
+    .masurement-modal-content {
+        width: 350px;
+    }
+    /* masurement-gidue modal css end */
 }

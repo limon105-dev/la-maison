@@ -166,3 +166,25 @@ $(function () {
 		});
 });
 // btn js ---
+
+// modal js start---
+var body = document.querySelector("body");
+var modal = document.querySelector(".masurement-modal");
+var measurement_guide_modal_btn = document.querySelector(".size-guide-open-btn");
+var closeButton = document.querySelector(".modal-close-button");
+
+function toggleModal() {
+	modal.classList.toggle("show-modal");
+	body.classList.toggle("active");
+}
+
+function windowOnClick(event) {
+	if (event.target === modal) {
+		toggleModal();
+	}
+}
+
+measurement_guide_modal_btn.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+// modal js end---
