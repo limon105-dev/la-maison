@@ -4,4 +4,97 @@
     background-color: var(--section-bg2);
 }
 
+.related-product-section.related-product-section2 {
+    background-color: var(--body-color);
+    padding: 130px 0;
+}
+
+.related-product-wrapper {
+    display: flex;
+    gap: 42px;
+}
+
+.related-product-section.related-product-section2 .related-product-wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.related-product-title-wrap {
+    max-width: 306px;
+    width: 100%;
+}
+
+.related-product-section.related-product-section2 .related-product-title-wrap {
+    max-width: 100%;
+}
+
+.related-product-sub-title {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.related-product-title {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.related-product-title-wrap .primary-btn {
+    background-color: transparent;
+    margin: 10px 0 0 0;
+}
+
+.related-product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.related-product-section.related-product-section2 .related-product-items {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* related-product-section css end */
+
+@media only screen and (max-width:992px){
+    /* related-product-section css start */
+    .related-product-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .related-product-title-wrap {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .related-product-section.related-product-section2 .related-product-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* related-product-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+    /* related-product-section css start */
+    .related-product-section {
+        padding: 40px 0;
+        background-color: var(--section-bg2);
+    }
+
+    .related-product-section.related-product-section2 {
+        padding: 40px 0;
+    }
+
+    .related-product-items {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8px;
+    }
+
+    .related-product-section.related-product-section2 .related-product-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* related-product-section css end */
+}

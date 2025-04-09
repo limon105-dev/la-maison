@@ -337,15 +337,6 @@
         column-gap: 8px;
     }
 
-    .collection-item .product-card .card-content {
-        margin: 10px 10px 15px 10px;
-    }
-
-    .collection-item .product-card .card-badge {
-        font-size: 14px;
-        padding: 7px 7px;
-    }
-
     .collection-filter {
         position: fixed;
         top: 0;
